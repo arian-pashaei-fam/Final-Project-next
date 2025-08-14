@@ -8,7 +8,7 @@ export default async function fetchImages(
   try {
     const res = await fetch(url, {
       headers: {
-        Authorization: env.PEXELS_API_KEY,
+        Authorization: "zumIpLYXNcKaC9G7jJXHnBMfOgs6cgbWRHNN4XWd1PrO098FktYrLa2P",
       },
     });
 
