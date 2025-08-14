@@ -1,5 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Navbar from "./components/Navbar";
+
+// هر 10 ثانیه دوباره تصویر میده
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Arian Final Project With Next",
@@ -14,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Navbar />
         <main className="max-w-6xl mx-auto">{children}</main>
       </body>
     </html>
